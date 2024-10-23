@@ -16,28 +16,48 @@ AudioAura is an AI-powered music analysis tool that detects genres and emotions 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/SriLakshmi-213/AudioAura
+    git clone https://github.com/your-repo-url
     cd AudioAura
     ```
 
-2. Install dependencies:
+2. Install frontend dependencies:
     ```bash
     npm install
     ```
 
-3. Start the development server:
-    ```bash
-    npm run dev
-    ```
-
-4. Backend setup:
-    Follow the instructions to set up your backend for machine learning models and API routes.
-
 ## Training and Using Models
 
-1. Train your model using the provided Python scripts.
-2. Save the trained models to the specified path.
+1. Navigate to the `my-react-app` directory and then to the `ml_code` folder:
+    ```bash
+    cd my-react-app/ml_code
+    ```
+
+2. Train your model using the provided Python script:
+    ```bash
+    python3 train_models.py
+    ```
+   This will save the trained models to the specified path.
+
 3. Use the saved genre paths in your frontend for real-time music analysis.
+
+## Running the Backend
+
+1. After training the models, run the real-time analysis script:
+    ```bash
+    python3 realtime_analysis.py
+    ```
+
+## Running the Frontend
+
+1. Open another terminal and navigate back to the `my-react-app` directory:
+    ```bash
+    cd my-react-app
+    ```
+
+2. Start the frontend:
+    ```bash
+    npm start
+    ```
 
 ## Contributing
 
